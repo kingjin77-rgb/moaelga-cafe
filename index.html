@@ -17,23 +17,20 @@
 <meta property="og:description" content="양주백석 모아엘가그랑데 입주예정자협의회 공식 네이버 카페입니다. 입주 준비 정보 공유와 소통을 위해 지금 가입하세요.">
 <meta property="og:url" content="https://kingjin77-rgb.github.io/moaelga-cafe/">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231B4B8F'/%3E%3Cpath d='M28 68V40l22-14 22 14v28' stroke='white' stroke-width='6' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232F6FED'/%3E%3Cpath d='M28 68V40l22-14 22 14v28' stroke='white' stroke-width='6' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
 
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
 
 <style>
   :root{
-    --navy:#0E2A52;
-    --brand:#1B4B8F;
-    --brand2:#2E6FD9;
-    --brand3:#5C93EF;
-    --gold:#C9A15A;
-    --brand-soft:#EAF1FB;
-    --ink:#1B2230;
-    --ink-sub:#5B6472;
-    --bg:#F5F7FA;
-    --surface:#FFFFFF;
-    --border:#E5E9F0;
+    --accent:#2F6FED;
+    --accent-soft:#EEF3FE;
+    --ink:#131316;
+    --ink-sub:#68707E;
+    --ink-faint:#9DA3AF;
+    --bg:#FFFFFF;
+    --bg-alt:#F7F8FA;
+    --border:#EBECEF;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
@@ -42,312 +39,262 @@
     font-weight:400;
     background:var(--bg);
     color:var(--ink);
-    line-height:1.7;
-    letter-spacing:-.015em;
+    line-height:1.6;
+    letter-spacing:-.02em;
     word-break:keep-all;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:760px;margin:0 auto;padding:0 22px;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 24px;}
   img,svg{display:block;max-width:100%;}
 
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;
-    background:radial-gradient(120% 140% at 15% -10%, #1E58AC 0%, var(--navy) 55%, #081733 100%);
-    color:#fff;
-    overflow:hidden;
-    padding:64px 0 0;
+  /* ---------- NAV ---------- */
+  .nav{
+    padding:22px 0;
   }
-  .hero-inner{position:relative;z-index:2;text-align:center;padding-bottom:34px;}
-  .eyebrow{
-    display:inline-flex;
+  .nav .brand{
+    font-size:14px;
+    font-weight:700;
+    color:var(--ink);
+    display:flex;
     align-items:center;
     gap:8px;
+  }
+  .nav .brand .dot{width:7px;height:7px;border-radius:2px;background:var(--accent);}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:56px 0 48px;}
+  .badge{
+    display:inline-block;
     font-size:13px;
-    font-weight:700;
-    letter-spacing:.02em;
-    color:#DCE8FF;
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.18);
-    padding:7px 16px;
-    border-radius:999px;
-    margin-bottom:22px;
+    font-weight:600;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:7px 14px;
+    border-radius:8px;
+    margin-bottom:24px;
   }
-  .eyebrow .sq{width:6px;height:6px;border-radius:2px;background:var(--gold);}
   .hero h1{
-    font-size:clamp(26px,6vw,34px);
-    font-weight:900;
-    line-height:1.42;
-    letter-spacing:-.01em;
-    margin-bottom:16px;
-  }
-  .hero h1 em{
-    font-style:normal;
-    background:linear-gradient(90deg,#8FB8FF,#D9C48C);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
+    font-size:clamp(28px,6.4vw,40px);
+    font-weight:800;
+    line-height:1.35;
+    letter-spacing:-.03em;
+    color:var(--ink);
+    margin-bottom:18px;
   }
   .hero p{
-    font-size:15.5px;
-    color:rgba(255,255,255,.78);
-    max-width:460px;
-    margin:0 auto;
+    font-size:16px;
+    color:var(--ink-sub);
+    max-width:480px;
+    line-height:1.7;
+    margin-bottom:32px;
   }
-
-  /* skyline illustration */
-  .skyline{position:relative;z-index:1;width:100%;height:auto;display:block;margin-top:38px;}
-
-  /* ---------- STAT STRIP ---------- */
-  .stats{
-    position:relative;z-index:2;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    background:var(--surface);
-    border-radius:18px 18px 0 0;
-    margin-top:-18px;
-    box-shadow:0 -10px 30px rgba(14,42,82,.12);
-  }
-  .stats .wrap{padding:0;max-width:760px;}
-  .stat-grid{
-    display:grid;grid-template-columns:repeat(3,1fr);
-    padding:22px 8px;
-  }
-  .stat-item{text-align:center;padding:6px 4px;}
-  .stat-item .num{font-size:18px;font-weight:900;color:var(--brand);}
-  .stat-item .label{font-size:11.5px;color:var(--ink-sub);margin-top:3px;letter-spacing:-.01em;}
-  .stat-item + .stat-item{border-left:1px solid var(--border);}
-
-  main{padding:36px 0 64px;}
-
-  .section-head{margin-bottom:16px;}
-  .section-head .tag{
-    display:inline-block;font-size:12px;font-weight:700;color:var(--brand2);
-    letter-spacing:.03em;margin-bottom:8px;
-  }
-  .section-head h2{font-size:19px;font-weight:900;color:var(--ink);letter-spacing:-.01em;}
-
-  .card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:26px 24px;
-    margin-bottom:18px;
-    box-shadow:0 1px 2px rgba(20,30,50,.03);
-  }
-  .card p{font-size:15px;color:var(--ink-sub);}
-
-  .reason-list{list-style:none;display:grid;gap:4px;margin-top:2px;}
-  .reason-item{
-    display:flex;
-    gap:14px;
-    align-items:flex-start;
-    padding:14px 4px;
-  }
-  .reason-item + .reason-item{border-top:1px solid var(--border);}
-  .reason-item .ico{
-    flex:0 0 auto;
-    width:38px;height:38px;
-    border-radius:11px;
-    background:var(--brand-soft);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .reason-item .txt{padding-top:6px;}
-  .reason-item .txt b{display:block;font-size:14.5px;font-weight:700;color:var(--ink);margin-bottom:2px;}
-  .reason-item .txt span{font-size:13px;color:var(--ink-sub);}
-
-  /* building illustration card */
-  .building-card{
-    position:relative;
-    border-radius:18px;
-    overflow:hidden;
-    margin-bottom:18px;
-    background:linear-gradient(160deg,#12335F,#0B2144);
-    padding:0;
-  }
-  .building-card .cap{
-    position:relative;z-index:2;
-    padding:22px 24px 20px;
-  }
-  .building-card .cap .name{color:#fff;font-size:16px;font-weight:900;letter-spacing:-.01em;}
-  .building-card .cap .sub{color:rgba(255,255,255,.65);font-size:12.5px;margin-top:4px;}
-
-  /* ---------- CTA ---------- */
-  .cta{
-    text-align:center;
-    padding:40px 26px;
-    background:linear-gradient(160deg,var(--brand),var(--navy));
-    border-radius:20px;
-    color:#fff;
-    box-shadow:0 16px 40px -12px rgba(27,75,143,.5);
-  }
-  .cta h2{font-size:20px;font-weight:900;margin-bottom:8px;}
-  .cta p{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:24px;}
-  .cta-btn{
+  .hero-actions{display:flex;gap:10px;flex-wrap:wrap;}
+  .btn-primary{
     display:inline-flex;
     align-items:center;
-    gap:8px;
-    background:#fff;
-    color:var(--brand);
-    font-size:16px;
-    font-weight:800;
+    gap:6px;
+    background:var(--accent);
+    color:#fff;
+    font-size:15px;
+    font-weight:700;
     text-decoration:none;
-    padding:16px 34px;
-    border-radius:13px;
-    transition:transform .15s ease, box-shadow .15s ease;
-    box-shadow:0 8px 20px rgba(0,0,0,.18);
+    padding:15px 24px;
+    border-radius:12px;
+    transition:background .15s ease;
   }
-  .cta-btn:hover{transform:translateY(-2px);}
-  .cta-note{margin-top:16px;font-size:12px;color:rgba(255,255,255,.55);}
+  .btn-primary:hover{background:#2159C7;}
+  .btn-secondary{
+    display:inline-flex;
+    align-items:center;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    color:var(--ink-sub);
+    padding:15px 20px;
+    border-radius:12px;
+    border:1px solid var(--border);
+  }
+
+  /* ---------- divider ---------- */
+  hr.div{border:none;border-top:1px solid var(--border);margin:0;}
+
+  /* ---------- STAT ROW ---------- */
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    padding:36px 0;
+    gap:8px;
+  }
+  .stat-item .num{font-size:15px;font-weight:700;color:var(--ink);}
+  .stat-item .label{font-size:13px;color:var(--ink-faint);margin-top:4px;}
+
+  main{padding:16px 0 40px;}
+  section{padding:52px 0;border-top:1px solid var(--border);}
+
+  .eyebrow{
+    font-size:13px;
+    font-weight:700;
+    color:var(--accent);
+    margin-bottom:12px;
+    letter-spacing:0;
+  }
+  section h2{
+    font-size:22px;
+    font-weight:800;
+    letter-spacing:-.02em;
+    color:var(--ink);
+    margin-bottom:14px;
+  }
+  section > p.lead{
+    font-size:15.5px;
+    color:var(--ink-sub);
+    line-height:1.75;
+    max-width:520px;
+  }
+
+  /* ---------- reason grid ---------- */
+  .reason-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-top:28px;
+  }
+  @media (max-width:520px){ .reason-grid{grid-template-columns:1fr;} }
+  .reason-card{
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:22px 20px;
+  }
+  .reason-card .ico{
+    width:36px;height:36px;
+    border-radius:10px;
+    background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:16px;
+  }
+  .reason-card b{display:block;font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px;}
+  .reason-card span{font-size:13.5px;color:var(--ink-sub);line-height:1.6;}
+
+  /* ---------- info panel (flat, no illustration) ---------- */
+  .panel{
+    background:var(--bg-alt);
+    border-radius:20px;
+    padding:32px 28px;
+    margin-top:28px;
+  }
+  .panel .name{font-size:16px;font-weight:800;color:var(--ink);}
+  .panel .sub{font-size:13.5px;color:var(--ink-sub);margin-top:6px;}
+
+  /* ---------- CTA ---------- */
+  .cta-section{border-top:1px solid var(--border);padding:60px 0 70px;}
+  .cta-box{
+    background:var(--ink);
+    border-radius:24px;
+    padding:44px 32px;
+    text-align:center;
+    color:#fff;
+  }
+  .cta-box h2{font-size:21px;font-weight:800;margin-bottom:10px;letter-spacing:-.02em;}
+  .cta-box p{font-size:14.5px;color:rgba(255,255,255,.62);margin-bottom:26px;}
+  .cta-box .btn-primary{background:#fff;color:var(--ink);}
+  .cta-box .btn-primary:hover{background:#EDEDED;}
+  .cta-note{margin-top:16px;font-size:12.5px;color:rgba(255,255,255,.4);}
 
   footer{
     text-align:center;
-    padding:30px 20px 44px;
+    padding:28px 20px 40px;
     font-size:12.5px;
-    color:#9AA2AF;
+    color:var(--ink-faint);
   }
 </style>
 </head>
 <body>
 
+<div class="wrap">
+  <nav class="nav">
+    <div class="brand"><span class="dot"></span>양주백석 모아엘가그랑데 입주예정자협의회</div>
+  </nav>
+</div>
+
 <header class="hero">
-  <div class="wrap hero-inner">
-    <span class="eyebrow"><span class="sq"></span>양주백석 모아엘가그랑데</span>
-    <h1>입주예정자협의회<br><em>공식 네이버 카페</em> 안내</h1>
-    <p>입주 준비 과정의 정보를 함께 나누고, 입주민의 목소리를 하나로 모으는 공간입니다.</p>
-  </div>
-
-  <svg class="skyline" viewBox="0 0 760 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="bgrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#3E75CE"/>
-        <stop offset="1" stop-color="#1B4B8F"/>
-      </linearGradient>
-    </defs>
-    <rect x="0" y="150" width="760" height="0"/>
-    <g opacity="0.35" fill="#9DBFF0">
-      <rect x="20" y="70" width="46" height="80" rx="3"/>
-      <rect x="80" y="50" width="40" height="100" rx="3"/>
-      <rect x="640" y="60" width="42" height="90" rx="3"/>
-      <rect x="700" y="80" width="40" height="70" rx="3"/>
-    </g>
-    <g fill="url(#bgrad)">
-      <rect x="150" y="30" width="66" height="120" rx="4"/>
-      <rect x="228" y="10" width="72" height="140" rx="4"/>
-      <rect x="312" y="34" width="60" height="116" rx="4"/>
-      <rect x="384" y="0" width="78" height="150" rx="4"/>
-      <rect x="474" y="40" width="64" height="110" rx="4"/>
-      <rect x="550" y="20" width="70" height="130" rx="4"/>
-    </g>
-    <g fill="#FFFFFF" opacity="0.55">
-      <!-- windows -->
-      <g id="wcol"></g>
-    </g>
-    <script><![CDATA[
-    ]]></script>
-  </svg>
-</header>
-
-<section class="stats">
   <div class="wrap">
-    <div class="stat-grid">
-      <div class="stat-item"><div class="num">입주민 직접운영</div><div class="label">자발적 소통 창구</div></div>
-      <div class="stat-item"><div class="num">정보 공유</div><div class="label">입주 절차 · 일정</div></div>
-      <div class="stat-item"><div class="num">누구나 가입</div><div class="label">가입비 없음</div></div>
+    <span class="badge">공식 네이버 카페</span>
+    <h1>입주 전, 우리끼리<br>먼저 모이는 공간</h1>
+    <p>양주백석 모아엘가그랑데 입주예정자협의회 공식 카페입니다. 입주 준비 정보를 함께 나누고, 입주민의 목소리를 하나로 모읍니다.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="https://cafe.naver.com/moaelga2595" target="_blank" rel="noopener">네이버 카페 가입하기 →</a>
+      <a class="btn-secondary" href="#about">협의회 소개 보기</a>
     </div>
   </div>
-</section>
+</header>
+
+<div class="wrap"><hr class="div"></div>
+
+<div class="wrap">
+  <div class="stat-row">
+    <div class="stat-item"><div class="num">입주민 직접운영</div><div class="label">자발적 소통 창구</div></div>
+    <div class="stat-item"><div class="num">가입비 없음</div><div class="label">누구나 가입 가능</div></div>
+    <div class="stat-item"><div class="num">정보 공유</div><div class="label">입주 절차 · 일정</div></div>
+  </div>
+</div>
 
 <main class="wrap">
 
-  <div class="section-head">
-    <span class="tag">ABOUT</span>
+  <section id="about">
+    <div class="eyebrow">ABOUT</div>
     <h2>협의회 카페 소개</h2>
-  </div>
-  <section class="card">
-    <p>
+    <p class="lead">
       양주백석 모아엘가그랑데 입주예정자협의회는 우리 단지 입주예정자들이 자발적으로 모여
       운영하는 공식 소통 창구입니다. 입주 전 준비 과정에서 필요한 정보를 나누고,
       입주민들의 의견을 함께 모아가고 있습니다.
     </p>
-  </section>
 
-  <div class="building-card">
-    <svg viewBox="0 0 760 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
-      <defs>
-        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#1B3E70"/>
-          <stop offset="1" stop-color="#0B2144"/>
-        </linearGradient>
-      </defs>
-      <rect width="760" height="220" fill="url(#sky)"/>
-      <g fill="#FFFFFF" opacity="0.06">
-        <rect x="40" y="30" width="90" height="190"/>
-        <rect x="150" y="60" width="80" height="160"/>
-        <rect x="250" y="10" width="100" height="210"/>
-        <rect x="370" y="45" width="85" height="175"/>
-        <rect x="470" y="0" width="110" height="220"/>
-        <rect x="600" y="55" width="80" height="165"/>
-        <rect x="690" y="80" width="70" height="140"/>
-      </g>
-      <g fill="#FFD98C" opacity="0.5">
-        <circle cx="60" cy="70" r="3"/><circle cx="60" cy="90" r="3"/><circle cx="60" cy="110" r="3"/>
-        <circle cx="90" cy="70" r="3"/><circle cx="90" cy="110" r="3"/>
-        <circle cx="280" cy="50" r="3"/><circle cx="280" cy="80" r="3"/><circle cx="280" cy="110" r="3"/><circle cx="280" cy="140" r="3"/>
-        <circle cx="320" cy="60" r="3"/><circle cx="320" cy="100" r="3"/><circle cx="320" cy="140" r="3"/>
-        <circle cx="500" cy="40" r="3"/><circle cx="500" cy="80" r="3"/><circle cx="500" cy="120" r="3"/><circle cx="500" cy="160" r="3"/>
-        <circle cx="540" cy="60" r="3"/><circle cx="540" cy="100" r="3"/><circle cx="540" cy="140" r="3"/>
-      </g>
-    </svg>
-    <div class="cap">
+    <div class="panel">
       <div class="name">양주백석 모아엘가그랑데</div>
       <div class="sub">입주예정자협의회가 함께 만들어가는 우리 단지</div>
     </div>
-  </div>
-
-  <div class="section-head">
-    <span class="tag">FOR YOU</span>
-    <h2>이런 분들께 도움이 됩니다</h2>
-  </div>
-  <section class="card" style="padding:10px 20px;">
-    <ul class="reason-list">
-      <li class="reason-item">
-        <span class="ico">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v13h6v-6h6v6h6V7l-9-5z" stroke="#1B4B8F" stroke-width="1.8" stroke-linejoin="round"/></svg>
-        </span>
-        <span class="txt"><b>입주 준비 정보</b><span>입주 일정과 절차, 준비사항을 미리 확인</span></span>
-      </li>
-      <li class="reason-item">
-        <span class="ico">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21c-4-3.5-8-6.8-8-11a8 8 0 0116 0c0 4.2-4 7.5-8 11z" stroke="#1B4B8F" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" stroke="#1B4B8F" stroke-width="1.8"/></svg>
-        </span>
-        <span class="txt"><b>단지 소식 공유</b><span>단지 관련 소식과 정보를 빠르게 전달</span></span>
-      </li>
-      <li class="reason-item">
-        <span class="ico">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2" stroke="#1B4B8F" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="7" r="3.4" stroke="#1B4B8F" stroke-width="1.8"/><path d="M17 8.5c1.3.3 2.3 1.5 2.3 3" stroke="#1B4B8F" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </span>
-        <span class="txt"><b>이웃과의 소통</b><span>이웃 입주예정자들과 미리 교류</span></span>
-      </li>
-      <li class="reason-item">
-        <span class="ico">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#1B4B8F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#1B4B8F" stroke-width="1.8"/></svg>
-        </span>
-        <span class="txt"><b>공동 의견 결집</b><span>입주민 공동의 의견을 함께 모음</span></span>
-      </li>
-    </ul>
   </section>
 
-  <section class="cta" style="margin-top:30px;">
-    <h2>지금 공식 카페에 가입하세요</h2>
-    <p>양주백석 모아엘가그랑데 입주예정자라면 누구나 가입하실 수 있습니다.</p>
-    <a class="cta-btn" href="https://cafe.naver.com/moaelga2595" target="_blank" rel="noopener">
-      네이버 카페 가입하러 가기 →
-    </a>
-    <p class="cta-note">cafe.naver.com/moaelga2595</p>
+  <section>
+    <div class="eyebrow">FOR YOU</div>
+    <h2>이런 분들께 도움이 됩니다</h2>
+
+    <div class="reason-grid">
+      <div class="reason-card">
+        <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7v13h6v-6h6v6h6V7l-9-5z" stroke="#2F6FED" stroke-width="1.8" stroke-linejoin="round"/></svg></span>
+        <b>입주 준비 정보</b>
+        <span>입주 일정과 절차, 준비사항을 미리 확인하고 싶은 분</span>
+      </div>
+      <div class="reason-card">
+        <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M12 21c-4-3.5-8-6.8-8-11a8 8 0 0116 0c0 4.2-4 7.5-8 11z" stroke="#2F6FED" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" stroke="#2F6FED" stroke-width="1.8"/></svg></span>
+        <b>단지 소식 공유</b>
+        <span>단지 관련 소식과 정보를 빠르게 공유받고 싶은 분</span>
+      </div>
+      <div class="reason-card">
+        <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M17 20v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2" stroke="#2F6FED" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="7" r="3.4" stroke="#2F6FED" stroke-width="1.8"/><path d="M17 8.5c1.3.3 2.3 1.5 2.3 3" stroke="#2F6FED" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <b>이웃과의 소통</b>
+        <span>이웃 입주예정자들과 미리 소통하고 싶은 분</span>
+      </div>
+      <div class="reason-card">
+        <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#2F6FED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#2F6FED" stroke-width="1.8"/></svg></span>
+        <b>공동 의견 결집</b>
+        <span>입주민 공동의 의견을 함께 모으고 싶은 분</span>
+      </div>
+    </div>
   </section>
 
 </main>
+
+<div class="cta-section">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>지금 공식 카페에 가입하세요</h2>
+      <p>양주백석 모아엘가그랑데 입주예정자라면 누구나 가입하실 수 있습니다.</p>
+      <a class="btn-primary" href="https://cafe.naver.com/moaelga2595" target="_blank" rel="noopener">네이버 카페 가입하러 가기 →</a>
+      <div class="cta-note">cafe.naver.com/moaelga2595</div>
+    </div>
+  </div>
+</div>
 
 <footer>
   양주백석 모아엘가그랑데 입주예정자협의회
